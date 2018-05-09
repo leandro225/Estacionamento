@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:TelasMenu"
         mc:Ignorable="d"
         Title="Menu" Height="401" Width="819" WindowState="Maximized">
-    <Grid>
-        <Grid HorizontalAlignment="Left" Margin="0" Width="185" Background="#FF3E3E3E">
+    <Grid Background="#FFA8A8A8">
+        <Grid HorizontalAlignment="Left" Margin="0" Width="219" Background="#FF3E3E3E">
             <Button Content="Estacionar                 " HorizontalAlignment="Left" Margin="0,64,0,0" VerticalAlignment="Top" Width="185" Background="#FF3E3E3E" Foreground="#FFF3F3F3" BorderBrush="#FF3E3E3E" FontSize="16" Click="Button_Click_Estacionar"/>
             <Button Content="Carros No Patio        " HorizontalAlignment="Left" Margin="0,94,0,0" VerticalAlignment="Top" Width="185" Background="#FF3E3E3E" Foreground="#FFF3F3F3" BorderBrush="#FF3E3E3E" FontSize="16" />
             <Button Content="Carros Fora Do Patio" HorizontalAlignment="Left" Margin="0,124,0,0" VerticalAlignment="Top" Width="185" Background="#FF3E3E3E" Foreground="#FFF3F3F3" BorderBrush="#FF3E3E3E" FontSize="16"/>

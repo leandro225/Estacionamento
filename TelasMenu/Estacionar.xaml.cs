@@ -29,6 +29,7 @@ namespace TelasMenu
             novaLista = Controllers.CarrosController.retornaTodosCarros();
             DtGrid.ItemsSource = null;
             DtGrid.ItemsSource = novaLista;
+            txtPlaca.Focus();
         }
 
 
