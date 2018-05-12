@@ -54,7 +54,7 @@ namespace TelasMenu
 
                 MessageBox.Show("Cadastrado Com Sucesso!!!", "Sucesso");
                 //DtGrid.ItemsSource = Controllers.CarrosController.retornaTodosCarros();
-                //this.Close();
+                this.Close();
 
 
 

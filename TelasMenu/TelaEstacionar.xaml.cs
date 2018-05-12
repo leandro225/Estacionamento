@@ -26,7 +26,7 @@ namespace TelasMenu
         public TelaEstacionar()
         {
             InitializeComponent();
-          
+            txtPlaca.Focus();
         }
 
 
@@ -51,16 +51,15 @@ namespace TelasMenu
                     CadastroEstacionar tela = new CadastroEstacionar();
                     tela.ShowDialog();
                 }
-                //else
-                //{
-                //    // Caso o cliente já esteja cadastrado, as informações aparecerão na tela
-                //    blockPlaca.Text = Recep.ClienteID.ToString();
-                //    blockNome.Text = Recep.Nome;
-                //    blockFone.Text = Recep.Telefone.ToString();
-                //    blockEnd.Text = Recep.Endereco;
-                //    blockNr.Text = Recep.Numero.ToString();
-                //    blockBairro.Text = Recep.Bairro;
-                //}
+                else
+                {
+                    // Caso o cliente já esteja cadastrado, as informações aparecerão na tela
+                   
+                    blockPlaca.Text = Recep.Placa;
+                    blockModelo.Text = Recep.Modelo;
+                    blockCor.Text = Recep.Cor;
+                   
+                }
             }
             catch (Exception)
             {
@@ -69,5 +68,9 @@ namespace TelasMenu
 
         }
 
+        private void Button_Estacionar_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
