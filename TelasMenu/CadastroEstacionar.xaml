@@ -20,9 +20,6 @@
             </Button>
         </StackPanel>
         
-          
-                
-        
         <Label Content="CADASTRAR NOVO VEICULO" HorizontalAlignment="Left" Margin="43,63,0,0" VerticalAlignment="Top" Width="228" Foreground="#DDFDFBFB" FontSize="16" FontFamily="Stencil" Background="{x:Null}"/>
         <Label Content="Placa:" HorizontalAlignment="Left" Margin="43,137,0,0" VerticalAlignment="Top" Foreground="#DDFFFFFF" FontFamily="Century Gothic" FontWeight="Bold" RenderTransformOrigin="0.717,0.707"/>
         <TextBox x:Name="txtPlaca" HorizontalAlignment="Left" Height="21" Margin="126,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="276" Background="{x:Null}" BorderBrush="#FFDFD629" CaretBrush="#FFDFD629" CharacterCasing="Upper" FontWeight="SemiBold" Foreground="White"  BorderThickness="0,0,0,1"/>
@@ -31,7 +28,7 @@
         <Label Content="Cor:" HorizontalAlignment="Left" Margin="43,188,0,0" VerticalAlignment="Top" Foreground="#DDFFFFFF" FontFamily="Century Gothic" FontWeight="Bold" RenderTransformOrigin="0.5,0.813"/>
         <TextBox x:Name="txtCor" HorizontalAlignment="Left" Height="21" Margin="126,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="276" Background="{x:Null}" BorderBrush="#FFDFD629" CaretBrush="#FFDFD629" CharacterCasing="Upper" FontWeight="SemiBold" Foreground="White"  BorderThickness="0,0,0,1"/>
         <Button Content="Salvar" HorizontalAlignment="Left" Margin="43,269,0,0" VerticalAlignment="Top" Width="83" Height="27" Click="btnSalvar_Click"/>
-  
+
 
 
 

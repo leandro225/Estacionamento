@@ -13,26 +13,24 @@
             <RowDefinition Height="279*"/>
         </Grid.RowDefinitions>
         <StackPanel Height="30" Margin="0" VerticalAlignment="Top" Background="#FFCAD314">
-            
+
             <Button x:Name="btnFechar" Content="" Width="38" HorizontalAlignment="Right" Foreground="#DDFFFFFF" BorderBrush="{x:Null}" FontSize="10" Click="btnFechar_Click" Margin="0,-4,-5,0" Height="38" VerticalAlignment="Stretch">
                 <Button.Background>
                     <ImageBrush ImageSource="img/Fechar.png"/>
                 </Button.Background>
             </Button>
         </StackPanel>
-        <DataGrid SelectedValuePath="" x:Name="DtGrid" HorizontalGridLinesBrush="{x:Null}" CanUserReorderColumns="False" CanUserResizeColumns="False"  CanUserResizeRows="False" Margin="472,137,60,0" Background="White" VerticalGridLinesBrush="{x:Null}" AutoGenerateColumns="False" GridLinesVisibility="None" CanUserDeleteRows="False" BorderBrush="{x:Null}" FontFamily="Century Gothic" FontSize="12" FontWeight="Bold" SelectionMode="Single" IsReadOnly="True" Foreground="#DD341919" Grid.RowSpan="2" Height="348" VerticalAlignment="Top">
-            <DataGrid.Columns>
-                <DataGridTextColumn  Binding="{Binding Placa}" Header="Placa" Width="80" SortDirection="Ascending"/>
-                <DataGridTextColumn  Binding="{Binding  Modelo}" Header="Modelo" Width="*" SortDirection="Ascending" />
-                <DataGridTextColumn  Binding="{Binding  Cor}" Header="Cor" Width="*" SortDirection="Ascending" />
-            </DataGrid.Columns>
-        </DataGrid>
-       
+
         <Label Content="Placa:" HorizontalAlignment="Left" Margin="43,137,0,0" VerticalAlignment="Top" Foreground="#DDFFFFFF" FontFamily="Century Gothic" FontWeight="Bold" RenderTransformOrigin="0.717,0.707"/>
-        <TextBox x:Name="txtPlaca" HorizontalAlignment="Left" Height="21" Margin="126,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="276" Background="{x:Null}" BorderBrush="#FFDFD629" CaretBrush="#FFDFD629" CharacterCasing="Upper" FontWeight="SemiBold" Foreground="White"  BorderThickness="0,0,0,1"/>
-
-        <Button Content="Estacionar" HorizontalAlignment="Left" Margin="43,196,0,0" VerticalAlignment="Top" Width="83" Height="27" Click="btnPesquisarPlaca_Click" />
-
+        <TextBox x:Name="txtPlaca" HorizontalAlignment="Left" Height="21" Margin="126,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195" Background="{x:Null}" BorderBrush="#FFDFD629" CaretBrush="#FFDFD629" CharacterCasing="Upper" FontWeight="SemiBold" Foreground="White"  BorderThickness="0,0,0,1"/>
+        <Button Content="Estacionar" HorizontalAlignment="Left" Margin="43,189,0,0" VerticalAlignment="Top" Width="83" Height="27" Click="btnPesquisarPlaca_Click" />
+        <!--DADOS DO CARRO-->
+        <Label Content="Dados do Veiculo" HorizontalAlignment="Left" Margin="43,237,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Stencil" FontStyle="Italic" FontSize="14"/>
+        <TextBlock x:Name="blockNome" HorizontalAlignment="Left" Margin="97,282,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" Foreground="#B2F5EB29" FontFamily="Century Gothic" FontStyle="Italic"/>
+        <Label Content="Placa:" HorizontalAlignment="Left" Margin="43,279,0,0" VerticalAlignment="Top" Foreground="#DDFFFFFF" FontFamily="Century Gothic" FontWeight="Bold"/>
+        <Label Content="Modelo:" HorizontalAlignment="Left" Margin="43,309,0,0" VerticalAlignment="Top" Foreground="#DDFFFFFF" FontFamily="Century Gothic" FontWeight="Bold" Grid.RowSpan="2"/>
+        <TextBlock x:Name="blockCor" HorizontalAlignment="Left" Margin="97,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" Foreground="#B2F5EB29" FontFamily="Century Gothic" FontStyle="Italic" Grid.Row="1"/>
+        <Label Content="Cor:" HorizontalAlignment="Left" Margin="43,25,0,0" VerticalAlignment="Top" Foreground="#DDFFFFFF" FontFamily="Century Gothic" FontWeight="Bold" Grid.Row="1"/>
 
 
 

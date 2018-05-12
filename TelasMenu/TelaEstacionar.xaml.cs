@@ -20,14 +20,16 @@ namespace TelasMenu
     /// </summary>
     public partial class TelaEstacionar : Window
     {
+        public static List<Carro> novaLista = new List<Carro>();
 
         List<Carro> ListarCarros = new List<Carro>();
         public TelaEstacionar()
         {
             InitializeComponent();
+          
         }
 
-        
+
 
         private void btnFechar_Click(object sender, RoutedEventArgs e)
         {
@@ -40,6 +42,7 @@ namespace TelasMenu
             {
                 // realiza a pesquisa do cliente passando o telefone como parâmetro e recebe o objeto 
                 Carro Recep = Controllers.CarrosController.PesquisaCarroPorPlaca(txtPlaca.Text);
+               
 
                 if (Recep == null)
                 {
