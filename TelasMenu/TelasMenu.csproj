@@ -76,13 +76,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Estacionar.xaml.cs">
-      <DependentUpon>Estacionar.xaml</DependentUpon>
+    <Compile Include="CadastroEstacionar.xaml.cs">
+      <DependentUpon>CadastroEstacionar.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TelaPrincipal.xaml.cs">
-      <DependentUpon>TelaPrincipal.xaml</DependentUpon>
+    <Compile Include="TelaEstacionar.xaml.cs">
+      <DependentUpon>TelaEstacionar.xaml</DependentUpon>
     </Compile>
-    <Page Include="Estacionar.xaml">
+    <Page Include="CadastroEstacionar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -98,7 +98,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="TelaPrincipal.xaml">
+    <Page Include="TelaEstacionar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

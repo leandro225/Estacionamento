@@ -27,9 +27,11 @@ namespace TelasMenu
 
         private void Button_Click_Estacionar(object sender, RoutedEventArgs e)
         {
-           
-            Estacionar estacionar = new Estacionar();
-            estacionar.ShowDialog();
+
+            TelaEstacionar telaEstacionar = new TelaEstacionar();
+            telaEstacionar.ShowDialog();
         }
+
+
     }
 }

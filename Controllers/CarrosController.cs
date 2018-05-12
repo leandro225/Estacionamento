@@ -51,17 +51,21 @@ namespace Controllers
 
 
         // }
-        //public Carro PesquisarPorPlaca(string buscar)
-        //{
-        //    var c = from x in MeusCarrosSalvos
-        //            where x.Placa.ToLower().Contains(buscar.Trim().ToLower())
-        //            select x;
+        public static Carro PesquisaCarroPorPlaca(string pla)
+        {
+            Contexto ctx = new Contexto();
+            List<Carro> lista = ctx.Carros.ToList();
+            foreach (var item in lista)
+            {
+                if (item.Placa == pla)
+                {
+                    return item;
 
-        //    if (c != null)
-        //        return c.FirstOrDefault();
-        //    else
-        //        return null;
-        //}
+                }
+            }
+            return null;
+
+        }
 
         //public static void DarEntradaNoEstacionamento(Carro carros)
         //{
