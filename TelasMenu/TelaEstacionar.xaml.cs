@@ -38,42 +38,47 @@ namespace TelasMenu
 
         private void btnPesquisarPlaca_Click(object sender, RoutedEventArgs e)
         {
-            try
+
+
+
+            if (txtPlaca.Text.Equals(""))
+            {
+
+                MessageBox.Show("Por Favor, Insira A Placa", "Informação", MessageBoxButton.OK);
+
+            }
+            else
             {
                 // realiza a pesquisa da placa passando ela como parâmetro e recebe o objeto 
                 Carro Recep = Controllers.CarrosController.PesquisaCarroPorPlaca(txtPlaca.Text);
-               
-
                 if (Recep == null)
                 {
                     MessageBox.Show("Veiculo Não Cadastrado No Sistema", "Informação", MessageBoxButton.OK);
                     Controllers.EstacionarController.GuardaPlaca(txtPlaca.Text);
-                    
+
                     CadastroEstacionar tela = new CadastroEstacionar();
-           
+
                     tela.ShowDialog();
-                    
+
                 }
                 else
                 {
-                    // Caso o carro já esteja cadastrado, as informações aparecerão na tela
-                   // blockId.Text = Recep.CarroID;
+
+                    //Caso o carro já esteja cadastrado, as informações aparecerão na tela
+
                     blockPlaca.Text = Recep.Placa;
                     blockModelo.Text = Recep.Modelo;
                     blockCor.Text = Recep.Cor;
                     blockId.Text = Recep.CarroID.ToString();
-
-
-                   
                 }
+
+
             }
-            catch (Exception)
-            {
-                MessageBox.Show("Por Favor, Insira A Placa", "Informação", MessageBoxButton.OK);
-            }
+
 
         }
 
+    
         private void Button_Estacionar_Click(object sender, RoutedEventArgs e)
         {
 
