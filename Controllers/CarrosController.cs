@@ -67,6 +67,13 @@ namespace Controllers
 
         }
 
+        public static Carro retornaCarroPorId(int id)
+        {
+            Contexto ctx = new Contexto();
+            Carro c = ctx.Carros.Find(id);
+            return c;
+        }
+
         //public static void DarEntradaNoEstacionamento(Carro carros)
         //{
         //    carros.setEstaEstacionado(true);

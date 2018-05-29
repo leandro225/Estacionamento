@@ -25,17 +25,18 @@
         <TextBox x:Name="txtPlaca" HorizontalAlignment="Left" Height="21" Margin="126,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195" Background="{x:Null}" BorderBrush="#FFDFD629" CaretBrush="#FFDFD629" CharacterCasing="Upper" FontWeight="SemiBold" Foreground="White"  BorderThickness="0,0,0,1"/>
         <Button Content="Buscar" HorizontalAlignment="Left" Margin="43,189,0,0" VerticalAlignment="Top" Width="83" Height="27" Click="btnPesquisarPlaca_Click" />
         <!--DADOS DO CARRO-->
-        <Label Content="Dados do Veiculo" HorizontalAlignment="Left" Margin="43,237,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Stencil" FontStyle="Italic" FontSize="14"/>
+        <Label Content="Dados do Veículo" HorizontalAlignment="Left" Margin="43,237,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Stencil" FontSize="14"/>
 
         <Label Content="Placa:" HorizontalAlignment="Left" Margin="43,279,0,0" VerticalAlignment="Top" Foreground="#DDFFFFFF" FontFamily="Century Gothic" FontWeight="Bold"/>
-        <TextBlock x:Name="blockPlaca" HorizontalAlignment="Left" Margin="97,282,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" Foreground="#B2F5EB29" FontFamily="Century Gothic" FontStyle="Italic" Height="22"/>
+        <TextBlock x:Name="blockPlaca" HorizontalAlignment="Left" Margin="97,282,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" Foreground="#B2F5EB29" FontFamily="Century Gothic" Height="22"/>
         <Label Content="Modelo:" HorizontalAlignment="Left" Margin="43,309,0,0" VerticalAlignment="Top" Foreground="#DDFFFFFF" FontFamily="Century Gothic" FontWeight="Bold" Grid.RowSpan="2"/>
-        <TextBlock x:Name="blockModelo" HorizontalAlignment="Left" Margin="101,312,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" Foreground="#B2F5EB29" FontFamily="Century Gothic" FontStyle="Italic" Height="22" Grid.RowSpan="2"/>
+        <TextBlock x:Name="blockModelo" HorizontalAlignment="Left" Margin="101,312,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" Foreground="#B2F5EB29" FontFamily="Century Gothic" Height="22" Grid.RowSpan="2"/>
         <Label Content="Cor:" HorizontalAlignment="Left" Margin="43,25,0,0" VerticalAlignment="Top" Foreground="#DDFFFFFF" FontFamily="Century Gothic" FontWeight="Bold" Grid.Row="1"/>
 
         <TextBlock x:Name="blockCor" HorizontalAlignment="Left" Margin="101,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" Foreground="#B2F5EB29" FontFamily="Century Gothic" FontStyle="Italic" Height="22" Grid.Row="1"/>
-        <Button Content="Estacionar" HorizontalAlignment="Left" Margin="43,61,0,0" Grid.Row="1" VerticalAlignment="Top" Width="89" Click=" Button_Estacionar_Click" Height="29"/>
-
+        <Label Content="ID:" HorizontalAlignment="Left" Margin="43,55,0,0" VerticalAlignment="Top" Foreground="#DDFFFFFF" FontFamily="Century Gothic" FontWeight="Bold" Grid.Row="1"/>
+        <TextBlock x:Name="blockId" HorizontalAlignment="Left" Margin="101,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" Foreground="#B2F5EB29" FontFamily="Century Gothic" Height="22" Grid.Row="1"/>
+        <Button Content="Estacionar" HorizontalAlignment="Left" Margin="43,172,0,0" Grid.Row="1" VerticalAlignment="Top" Width="89" Click=" Button_Estacionar_Click" Height="29"/>
 
     </Grid>
 </Window>

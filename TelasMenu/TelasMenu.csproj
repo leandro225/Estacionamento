@@ -79,6 +79,15 @@
     <Compile Include="CadastroEstacionar.xaml.cs">
       <DependentUpon>CadastroEstacionar.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TelaCarrosForaDoPatio.xaml.cs">
+      <DependentUpon>TelaCarrosForaDoPatio.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TelaCarrosNoPatio.xaml.cs">
+      <DependentUpon>TelaCarrosNoPatio.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TelaEstacionado.xaml.cs">
+      <DependentUpon>TelaEstacionado.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TelaEstacionar.xaml.cs">
       <DependentUpon>TelaEstacionar.xaml</DependentUpon>
     </Compile>
@@ -98,6 +107,18 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="TelaCarrosForaDoPatio.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TelaCarrosNoPatio.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TelaEstacionado.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="TelaEstacionar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

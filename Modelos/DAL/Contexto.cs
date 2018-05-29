@@ -15,6 +15,7 @@ namespace Modelos.DAL
         }
 
         public DbSet<Carro> Carros { get; set; }
+        public DbSet<Entrada> Estacionados { get; set; }
     }
 }
 

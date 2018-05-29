@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Carro.cs" />
     <Compile Include="DAL\Contexto.cs" />
+    <Compile Include="Entrada.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

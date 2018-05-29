@@ -40,7 +40,7 @@ namespace TelasMenu
         {
             try
             {
-                // realiza a pesquisa do cliente passando o telefone como parâmetro e recebe o objeto 
+                // realiza a pesquisa da placa passando ela como parâmetro e recebe o objeto 
                 Carro Recep = Controllers.CarrosController.PesquisaCarroPorPlaca(txtPlaca.Text);
                
 
@@ -56,11 +56,12 @@ namespace TelasMenu
                 }
                 else
                 {
-                    // Caso o cliente já esteja cadastrado, as informações aparecerão na tela
+                    // Caso o carro já esteja cadastrado, as informações aparecerão na tela
                    // blockId.Text = Recep.CarroID;
                     blockPlaca.Text = Recep.Placa;
                     blockModelo.Text = Recep.Modelo;
                     blockCor.Text = Recep.Cor;
+                    blockId.Text = Recep.CarroID.ToString();
 
 
                    
@@ -68,13 +69,24 @@ namespace TelasMenu
             }
             catch (Exception)
             {
-                MessageBox.Show("Por Favor, Insira O Telefone", "Informação", MessageBoxButton.OK);
+                MessageBox.Show("Por Favor, Insira A Placa", "Informação", MessageBoxButton.OK);
             }
 
         }
 
         private void Button_Estacionar_Click(object sender, RoutedEventArgs e)
         {
+
+            
+             Entrada novaEntrada = new Entrada();
+
+             novaEntrada.clienteId = int.Parse(blockId.Text);
+
+             novaEntrada.DataEstacionar = DateTime.Now.ToString();
+
+            Controllers.EstacionarController.SalvarEntrada(novaEntrada);
+            TelaEstacionado novaTela = new TelaEstacionado();
+            novaTela.ShowDialog();
 
         }
     }

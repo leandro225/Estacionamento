@@ -32,6 +32,20 @@ namespace TelasMenu
             telaEstacionar.ShowDialog();
         }
 
+        private void Button_Click_CarrosPatio(object sender, RoutedEventArgs e)
+        {
 
+            TelaCarrosNoPatio telaCarrosNoPatio = new TelaCarrosNoPatio();
+            telaCarrosNoPatio.ShowDialog();
+        }
+
+        private void Button_Click_CarrosForaPatio(object sender, RoutedEventArgs e)
+        {
+
+            TelaCarrosForaDoPatio telaCarrosForaDoPatio = new TelaCarrosForaDoPatio();
+            telaCarrosForaDoPatio.ShowDialog();
+        }
+
+       
     }
 }
