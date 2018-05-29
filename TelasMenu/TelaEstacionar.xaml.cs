@@ -48,16 +48,21 @@ namespace TelasMenu
                 {
                     MessageBox.Show("Veiculo Não Cadastrado No Sistema", "Informação", MessageBoxButton.OK);
                     Controllers.EstacionarController.GuardaPlaca(txtPlaca.Text);
+                    
                     CadastroEstacionar tela = new CadastroEstacionar();
+           
                     tela.ShowDialog();
+                    
                 }
                 else
                 {
                     // Caso o cliente já esteja cadastrado, as informações aparecerão na tela
-                   
+                   // blockId.Text = Recep.CarroID;
                     blockPlaca.Text = Recep.Placa;
                     blockModelo.Text = Recep.Modelo;
                     blockCor.Text = Recep.Cor;
+
+
                    
                 }
             }

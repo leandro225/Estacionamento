@@ -28,12 +28,12 @@ namespace TelasMenu
 
             InitializeComponent();
             novaLista = Controllers.CarrosController.retornaTodosCarros();
-           // DtGrid.ItemsSource = null;
-           // DtGrid.ItemsSource = novaLista;
-            txtPlaca.Focus();
+            // DtGrid.ItemsSource = null;
+            // DtGrid.ItemsSource = novaLista;
+   
+            txtPlaca.Text = Controllers.EstacionarController.RetornaPlaca();
+            txtModelo.Focus();
         }
-
-
         
         private void btnFechar_Click(object sender, RoutedEventArgs e)
         {
@@ -55,8 +55,6 @@ namespace TelasMenu
                 MessageBox.Show("Cadastrado Com Sucesso!!!", "Sucesso");
                 //DtGrid.ItemsSource = Controllers.CarrosController.retornaTodosCarros();
                 this.Close();
-
-
 
             }
             catch (Exception)
