@@ -22,8 +22,8 @@
         </StackPanel>
 
         <Label Content="Placa:" HorizontalAlignment="Left" Margin="43,137,0,0" VerticalAlignment="Top" Foreground="#DDFFFFFF" FontFamily="Century Gothic" FontWeight="Bold" RenderTransformOrigin="0.717,0.707"/>
-        <TextBox x:Name="txtPlaca" HorizontalAlignment="Left" Height="21" Margin="126,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195" Background="{x:Null}" BorderBrush="#FFDFD629" CaretBrush="#FFDFD629" CharacterCasing="Upper" FontWeight="SemiBold" Foreground="White"  BorderThickness="0,0,0,1"/>
-        <Button Content="Buscar" HorizontalAlignment="Left" Margin="43,189,0,0" VerticalAlignment="Top" Width="83" Height="27" Click="btnPesquisarPlaca_Click" />
+        <TextBox x:Name="txtPlaca" HorizontalAlignment="Left" Height="25" Margin="101,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195" Background="{x:Null}" BorderBrush="#FFDFD629" CaretBrush="#FFDFD629" CharacterCasing="Upper" FontWeight="SemiBold" Foreground="White"  BorderThickness="0,0,0,1" SelectionBrush="{x:Null}"/>
+        <Button Content="Buscar" HorizontalAlignment="Left" Margin="43,189,0,0" VerticalAlignment="Top" Width="83" Height="27" Click="btnPesquisarPlaca_Click" Background="#FFF6F7F7" BorderBrush="{x:Null}" />
         <!--DADOS DO CARRO-->
         <Label Content="Dados do Veículo" HorizontalAlignment="Left" Margin="43,237,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Stencil" FontSize="14"/>
 
@@ -36,7 +36,7 @@
         <TextBlock x:Name="blockCor" HorizontalAlignment="Left" Margin="101,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" Foreground="#B2F5EB29" FontFamily="Century Gothic" FontStyle="Italic" Height="22" Grid.Row="1"/>
         <Label Content="ID:" HorizontalAlignment="Left" Margin="43,55,0,0" VerticalAlignment="Top" Foreground="#DDFFFFFF" FontFamily="Century Gothic" FontWeight="Bold" Grid.Row="1"/>
         <TextBlock x:Name="blockId" HorizontalAlignment="Left" Margin="101,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" Foreground="#B2F5EB29" FontFamily="Century Gothic" Height="22" Grid.Row="1"/>
-        <Button Content="Estacionar" HorizontalAlignment="Left" Margin="43,172,0,0" Grid.Row="1" VerticalAlignment="Top" Width="89" Click="Button_Estacionar_Click" Height="29"/>
+        <Button Content="Estacionar" HorizontalAlignment="Left" Margin="43,172,0,0" Grid.Row="1" VerticalAlignment="Top" Width="109" Click="Button_Estacionar_Click" Height="29" Background="WhiteSmoke" BorderBrush="{x:Null}"/>
 
     </Grid>
 </Window>

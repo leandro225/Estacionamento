@@ -19,15 +19,15 @@
                 </Button.Background>
             </Button>
         </StackPanel>
-        
+
         <Label Content="CADASTRAR NOVO VEICULO" HorizontalAlignment="Left" Margin="43,63,0,0" VerticalAlignment="Top" Width="228" Foreground="#DDFDFBFB" FontSize="16" FontFamily="Stencil" Background="{x:Null}"/>
         <Label Content="Placa:" HorizontalAlignment="Left" Margin="43,137,0,0" VerticalAlignment="Top" Foreground="#DDFFFFFF" FontFamily="Century Gothic" FontWeight="Bold" RenderTransformOrigin="0.717,0.707"/>
-        <TextBox x:Name="txtPlaca" HorizontalAlignment="Left" Height="21" Margin="126,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="276" Background="{x:Null}" BorderBrush="#FFDFD629" CaretBrush="#FFDFD629" CharacterCasing="Upper" FontWeight="SemiBold" Foreground="White"  BorderThickness="0,0,0,1" IsEnabled="False" />
         <Label Content="Modelo:" HorizontalAlignment="Left" Margin="43,162,0,0" VerticalAlignment="Top" Foreground="#DDFFFFFF" FontFamily="Century Gothic" FontWeight="Bold"/>
-        <TextBox x:Name="txtModelo" HorizontalAlignment="Left" Height="21" Margin="126,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="276" Background="{x:Null}" BorderBrush="#FFDFD629" CaretBrush="#FFDFD629" CharacterCasing="Upper" FontWeight="SemiBold" Foreground="White"  BorderThickness="0,0,0,1"/>
+        <TextBox x:Name="txtModelo" HorizontalAlignment="Left" Height="30" Margin="126,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="276" Background="{x:Null}" BorderBrush="#FFDFD629" CaretBrush="#FFDFD629" CharacterCasing="Upper" FontWeight="SemiBold" Foreground="White"  BorderThickness="0,0,0,1" SelectionBrush="{x:Null}"/>
         <Label Content="Cor:" HorizontalAlignment="Left" Margin="43,188,0,0" VerticalAlignment="Top" Foreground="#DDFFFFFF" FontFamily="Century Gothic" FontWeight="Bold" RenderTransformOrigin="0.5,0.813"/>
-        <TextBox x:Name="txtCor" HorizontalAlignment="Left" Height="21" Margin="126,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="276" Background="{x:Null}" BorderBrush="#FFDFD629" CaretBrush="#FFDFD629" CharacterCasing="Upper" FontWeight="SemiBold" Foreground="White"  BorderThickness="0,0,0,1"/>
-        <Button Content="Salvar" HorizontalAlignment="Left" Margin="43,269,0,0" VerticalAlignment="Top" Width="83" Height="27" Click="btnSalvar_Click"/>
+        <TextBox x:Name="txtCor" HorizontalAlignment="Left" Height="31" Margin="126,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="276" BorderBrush="#FFDFD629" CaretBrush="#FFDFD629" CharacterCasing="Upper" FontWeight="SemiBold" Foreground="White"  BorderThickness="0,0,0,1" Background="{x:Null}" SelectionBrush="{x:Null}"/>
+        <Button Content="Salvar" HorizontalAlignment="Left" Margin="43,269,0,0" VerticalAlignment="Top" Width="83" Height="27" Click="btnSalvar_Click" Background="#FFFBFBFB" BorderBrush="{x:Null}"/>
+        <TextBox x:Name="txtPlaca" HorizontalAlignment="Left" Height="25" Margin="126,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="276" Background="{x:Null}" BorderBrush="#FFDFD629" CaretBrush="#FFDFD629" CharacterCasing="Upper" FontWeight="SemiBold" Foreground="White"  BorderThickness="0,0,0,1" SelectionBrush="{x:Null}" IsReadOnly="True"/>
 
 
 

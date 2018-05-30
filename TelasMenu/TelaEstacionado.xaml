@@ -25,7 +25,7 @@
         <TextBlock x:Name="blockModelo" HorizontalAlignment="Left" Margin="104,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" Foreground="#B2F5EB29" FontFamily="Century Gothic" Height="22"/>
         <Label Content="Cor:" HorizontalAlignment="Left" Margin="43,197,0,0" VerticalAlignment="Top" Foreground="#DDFFFFFF" FontFamily="Century Gothic" FontWeight="Bold"/>
         <TextBlock x:Name="blockCor" HorizontalAlignment="Left" Margin="104,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" Foreground="#B2F5EB29" FontFamily="Century Gothic" Height="22"/>
-        <Button Content="Fechar" HorizontalAlignment="Left" Margin="43,184,0,0" Grid.Row="1" VerticalAlignment="Top" Width="89" Click="Button_Fechar_Click" Height="29"/>
+        <Button Content="Fechar" HorizontalAlignment="Left" Margin="43,184,0,0" Grid.Row="1" VerticalAlignment="Top" Width="89" Click="Button_Fechar_Click" Height="29" Background="#FFF0F0F0" BorderBrush="{x:Null}"/>
         <Label Content="Hora Entrada:" HorizontalAlignment="Left" Margin="43,273,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Century Gothic" FontWeight="Bold" Height="31"/>
         <TextBlock x:Name="txtData" HorizontalAlignment="Left" Margin="137,279,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" Foreground="#B2FFFFFF" FontFamily="Century Gothic" Height="27"/>
 
