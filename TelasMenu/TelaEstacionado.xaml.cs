@@ -29,7 +29,7 @@ namespace TelasMenu
             recebeEstacionar = Controllers.EstacionarController.ultimoCarro;
             
             
-            Carro c = Controllers.CarrosController.retornaCarroPorId(recebeEstacionar.clienteId);
+            Carro c = Controllers.CarrosController.retornaCarroPorId(recebeEstacionar.entradaId);
    
             blockPlaca.Text = c.Placa;
             blockModelo.Text = c.Modelo;

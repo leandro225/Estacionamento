@@ -8,10 +8,10 @@
         Title="Menu" Height="401" Width="819" WindowState="Maximized">
     <Grid Background="#FFA8A8A8">
         <Grid HorizontalAlignment="Left" Margin="0" Width="220" Background="#FF3E3E3E">
-            <Button Content="Carros Fora Do Patio" HorizontalAlignment="Left" Margin="0,124,0,0" VerticalAlignment="Top" Width="219" Background="#FF3E3E3E" Foreground="#FFF3F3F3" BorderBrush="#FF3E3E3E" FontSize="16" Click="Button_Click_CarrosForaPatio"/>
-            <Button Content="  Pagar Estacionamento" HorizontalAlignment="Left" Margin="0,154,0,0" VerticalAlignment="Top" Width="219" Background="#FF3E3E3E" Foreground="#FFF3F3F3" BorderBrush="#FF3E3E3E" FontSize="16"/>
-            <Button Content="Estacionar        " HorizontalAlignment="Left" Margin="1,57,0,0" VerticalAlignment="Top" Width="219" Click="Button_Click_Estacionar" Background="#FF404142" BorderBrush="{x:Null}" Foreground="#DDFFFFFF" FontSize="16"/>
-            <Button Content="    Veiculos No Patio" HorizontalAlignment="Left" Margin="1,89,0,0" VerticalAlignment="Top" Width="219" Click="Button_Click_CarrosPatio" Background="#FF404142" BorderBrush="{x:Null}" Foreground="#DDFFFFFF" FontSize="16"/>
+            <Button Content="     Ticket Entrada                " HorizontalAlignment="Left" Margin="1,57,0,0" VerticalAlignment="Top" Width="219" Click="Button_Click_Estacionar" Background="#FF404142" BorderBrush="{x:Null}" Foreground="#DDFFFFFF" FontSize="16"/>
+            <Button Content="Veiculos No Patio    " HorizontalAlignment="Left" Margin="1,89,0,0" VerticalAlignment="Top" Width="219" Click="Button_Click_CarrosPatio" Background="#FF404142" BorderBrush="{x:Null}" Foreground="#DDFFFFFF" FontSize="16"/>
+            <Button Content="    Veiculos Fora Do Patio" HorizontalAlignment="Left" Margin="1,122,0,0" VerticalAlignment="Top" Width="219" Click="Button_Click_CarrosForaPatio" Background="#FF404142" BorderBrush="{x:Null}" Foreground="#DDFFFFFF" FontSize="16"/>
+            <Button Content="    Pagar Ticket                 " HorizontalAlignment="Left" Margin="1,154,0,0" VerticalAlignment="Top" Width="219"  Background="#FF404142" BorderBrush="{x:Null}" Foreground="#DDFFFFFF" FontSize="16"/>
 
         </Grid>
     </Grid>
