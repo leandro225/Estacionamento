@@ -8,8 +8,6 @@ namespace Modelos
 {
     public class Carro
 
-       
-
     {
         private Boolean estaEstacionado;
 
@@ -30,7 +28,6 @@ namespace Modelos
         {
             this.estaEstacionado = estaEstacionado;
         }
-
 
     }
     

@@ -9,7 +9,7 @@ namespace Modelos.DAL
 {
     public class Contexto : DbContext
     {
-        public Contexto() : base("stringConn")
+        public Contexto() : base("Estacionamento")
         {
 
         }

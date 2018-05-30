@@ -19,11 +19,12 @@
                 </Button.Background>
             </Button>
         </StackPanel>
-        <DataGrid SelectedValuePath="CarroID" x:Name="DtGrid" HorizontalGridLinesBrush="{x:Null}" CanUserReorderColumns="False" CanUserResizeColumns="False"  CanUserResizeRows="False" Margin="0,30,526,0" Background="{x:Null}" VerticalGridLinesBrush="{x:Null}" AutoGenerateColumns="False" GridLinesVisibility="None" CanUserDeleteRows="False" BorderBrush="{x:Null}" FontFamily="Century Gothic" FontSize="12" FontWeight="Bold" SelectionMode="Single" IsReadOnly="True" Foreground="#DDFFFFFF" Grid.RowSpan="2">
+        <DataGrid SelectedValuePath="CarroID" x:Name="DtGrid"  HorizontalGridLinesBrush="{x:Null}" CanUserReorderColumns="False" CanUserResizeColumns="False"  CanUserResizeRows="False" Margin="0,30,397,0" Background="{x:Null}" VerticalGridLinesBrush="{x:Null}" AutoGenerateColumns="False" GridLinesVisibility="None" CanUserDeleteRows="False" BorderBrush="{x:Null}" FontFamily="Century Gothic" FontSize="12" FontWeight="Bold" SelectionMode="Single" IsReadOnly="True" Foreground="#DDFFFFFF" Grid.RowSpan="2">
             <DataGrid.Columns>
                 <DataGridTextColumn  Binding="{Binding Placa}" Header="Placa" Width="80" SortDirection="Ascending"/>
-                <DataGridTextColumn  Binding="{Binding Modelo}" Header="Modelo" Width="95" SortDirection="Ascending"/>
+                <DataGridTextColumn  Binding="{Binding Modelo}" Header="Modelo" Width="140" SortDirection="Ascending"/>
                 <DataGridTextColumn  Binding="{Binding Cor}" Header="Cor" Width="95" SortDirection="Ascending"/>
+                <DataGridTextColumn  Binding="{Binding DataEstacionar}" Header="Hora Entrada" Width="155" SortDirection="Ascending"/>
             </DataGrid.Columns>
         </DataGrid>
 

@@ -22,19 +22,22 @@ namespace TelasMenu
     {
 
         public static List<Carro> novaLista = new List<Carro>();
+       
 
         public TelaCarrosNoPatio()
         {
             InitializeComponent();
-            novaLista = Controllers.EstacionarController.retornaCarros();
             DtGrid.ItemsSource = null;
+            novaLista = Controllers.EstacionarController.retornaCarros();
+
             DtGrid.ItemsSource = novaLista;
-           
         }
 
         private void btnFechar_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
+
     }
+
 }

@@ -29,8 +29,6 @@ namespace TelasMenu
             txtPlaca.Focus();
         }
 
-
-
         private void btnFechar_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
@@ -39,21 +37,21 @@ namespace TelasMenu
         private void btnPesquisarPlaca_Click(object sender, RoutedEventArgs e)
         {
 
-
-
             if (txtPlaca.Text.Equals(""))
             {
 
-                MessageBox.Show("Por Favor, Insira A Placa", "Informação", MessageBoxButton.OK);
+                MessageBox.Show("Informe A Placa Do Veiculo!!!", "Atenção", MessageBoxButton.OK);
 
             }
             else
             {
                 // realiza a pesquisa da placa passando ela como parâmetro e recebe o objeto 
                 Carro Recep = Controllers.CarrosController.PesquisaCarroPorPlaca(txtPlaca.Text);
+
                 if (Recep == null)
                 {
-                    MessageBox.Show("Veiculo Não Cadastrado No Sistema", "Informação", MessageBoxButton.OK);
+                    MessageBox.Show("Veiculo Não Cadastrado No Sistema", "Alerta", MessageBoxButton.OK);
+
                     Controllers.EstacionarController.GuardaPlaca(txtPlaca.Text);
 
                     CadastroEstacionar tela = new CadastroEstacionar();
@@ -72,27 +70,35 @@ namespace TelasMenu
                     blockId.Text = Recep.CarroID.ToString();
                 }
 
-
             }
 
-
         }
-
     
         private void Button_Estacionar_Click(object sender, RoutedEventArgs e)
         {
+            if (txtPlaca.Text.Equals(""))
+            {
 
-            
-             Entrada novaEntrada = new Entrada();
+                MessageBox.Show("Informe A Placa Do Veiculo!!!", "Atenção", MessageBoxButton.OK);
 
-             novaEntrada.clienteId = int.Parse(blockId.Text);
+            }
+            else
+            {
+                Entrada novaEntrada = new Entrada();
 
-             novaEntrada.DataEstacionar = DateTime.Now.ToString();
+                novaEntrada.clienteId= int.Parse(blockId.Text);
 
-            Controllers.EstacionarController.SalvarEntrada(novaEntrada);
-            TelaEstacionado novaTela = new TelaEstacionado();
-            novaTela.ShowDialog();
+                novaEntrada.DataEstacionar = DateTime.Now.ToString();
 
+                Controllers.EstacionarController.SalvarEntrada(novaEntrada);
+
+                TelaEstacionado novaTela = new TelaEstacionado();
+
+                novaTela.ShowDialog();
+            }
+         
         }
+
     }
+
 }

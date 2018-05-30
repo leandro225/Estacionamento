@@ -27,30 +27,7 @@ namespace Controllers
             Contexto ctx = new Contexto();
             return ctx.Carros.ToList();
         }
-
-
-        //    public Carro PesquisarPorID(int idCarro)
-        //    {
-        //        var c = from x in MeusCarrosSalvos
-        //                where x.CarroID.Equals(idCarro)
-        //                select x;
-
-        //        if (c != null)
-        //            return c.FirstOrDefault();
-        //        else
-        //            return null;
-        //    }
-
-        //public static Carro BuscarPelaPlaca(string busca)
-        // {
-
-        // for(int i = 0; i <= MeusCarrosSalvos.Capacity; i++)
-        // {
-        //    if(busca.Equals(MeusCarrosSalvos))
-        //  }
-
-
-        // }
+     
         public static Carro PesquisaCarroPorPlaca(string pla)
         {
             Contexto ctx = new Contexto();
@@ -67,39 +44,13 @@ namespace Controllers
 
         }
 
-
         public static Carro retornaCarroPorId(int id)
         {
             Contexto ctx = new Contexto();
             Carro c = ctx.Carros.Find(id);
             return c;
         }
-
-        //public static void DarEntradaNoEstacionamento(Carro carros)
-        //{
-        //    carros.setEstaEstacionado(true);
-        //}
-        //public static void DarSaidaNoEstacionamento(Carro carros)
-        //{
-        //    carros.setEstaEstacionado(false);
-        //}
-
-        //public static List<Carro> CarrosNoEstacionamento()
-
-        //{
-        //    List <Carro>  ListaDois = new List<Carro>();
-
-        //    for (int i = 0; i < MeusCarrosSalvos.Capacity; i++)
-        //    {
-        //        if (MeusCarrosSalvos.s)
-        //        {
-
-        //        }
-        //    }
-
-
-        //}
-
-        // }
+       
     }
+
 }

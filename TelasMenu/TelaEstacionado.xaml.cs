@@ -26,16 +26,15 @@ namespace TelasMenu
 
             Entrada recebeEstacionar = new Entrada();
           
-            recebeEstacionar = Controllers.EstacionarController.ultimoCarro;
+            recebeEstacionar = Controllers.EstacionarController.ultimoCarro;          
             
-            
-            Carro c = Controllers.CarrosController.retornaCarroPorId(recebeEstacionar.entradaId);
+            Carro c = Controllers.CarrosController.retornaCarroPorId(recebeEstacionar.clienteId);
    
             blockPlaca.Text = c.Placa;
             blockModelo.Text = c.Modelo;
             blockCor.Text = c.Cor;
-            txtData.Text = recebeEstacionar.DataEstacionar;
-           
+            txtData.Text = recebeEstacionar.DataEstacionar;      
+            
 
         }
 
@@ -43,5 +42,7 @@ namespace TelasMenu
         {
             this.Close();
         }
+
     }
+
 }

@@ -28,9 +28,7 @@ namespace TelasMenu
 
             InitializeComponent();
             novaLista = Controllers.CarrosController.retornaTodosCarros();
-            // DtGrid.ItemsSource = null;
-            // DtGrid.ItemsSource = novaLista;
-   
+           
             txtPlaca.Text = Controllers.EstacionarController.RetornaPlaca();
             txtModelo.Focus();
         }
@@ -53,7 +51,7 @@ namespace TelasMenu
                 Controllers.CarrosController.SalvarCarrosCadastrados(novoCarro);
 
                 MessageBox.Show("Cadastrado Com Sucesso!!!", "Sucesso");
-                //DtGrid.ItemsSource = Controllers.CarrosController.retornaTodosCarros();
+     
                 this.Close();
 
             }
@@ -62,8 +60,8 @@ namespace TelasMenu
 
                 MessageBox.Show("! Favor Inserir Todos Os Dados Corretamente!", "Atenção");
             }
-        }
-
+        }   
        
     }
+
 }
