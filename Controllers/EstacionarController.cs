@@ -54,6 +54,12 @@ namespace Controllers
 
         }
 
+        public static List<Carro> retornaCarros()
+        {
+            Contexto ctx = new Contexto();
+            return ctx.Carros.ToList();
+        }
+
 
     }
 }

@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Modelos;
 
 namespace TelasMenu
 {
@@ -19,9 +20,16 @@ namespace TelasMenu
     /// </summary>
     public partial class TelaCarrosNoPatio : Window
     {
+
+        public static List<Carro> novaLista = new List<Carro>();
+
         public TelaCarrosNoPatio()
         {
             InitializeComponent();
+            novaLista = Controllers.EstacionarController.retornaCarros();
+            DtGrid.ItemsSource = null;
+            DtGrid.ItemsSource = novaLista;
+           
         }
 
         private void btnFechar_Click(object sender, RoutedEventArgs e)

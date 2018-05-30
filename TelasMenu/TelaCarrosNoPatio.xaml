@@ -7,14 +7,28 @@
         mc:Ignorable="d"
         
         Title="TelaCarrosNoPatio"   Height="593" Width="954" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None" BorderBrush="White" Margin="0">
-    <Grid>
+    <Grid Background="#FF3E3E3E">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="314*"/>
+            <RowDefinition Height="279*"/>
+        </Grid.RowDefinitions>
         <StackPanel Height="30" Margin="0" VerticalAlignment="Top" Background="#FFCAD314">
-
             <Button x:Name="btnFechar" Content="" Width="38" HorizontalAlignment="Right" Foreground="#DDFFFFFF" BorderBrush="{x:Null}" FontSize="10" Click="btnFechar_Click" Margin="0,-4,-5,0" Height="38" VerticalAlignment="Stretch">
                 <Button.Background>
                     <ImageBrush ImageSource="img/Fechar.png"/>
                 </Button.Background>
             </Button>
         </StackPanel>
+        <DataGrid SelectedValuePath="CarroID" x:Name="DtGrid" HorizontalGridLinesBrush="{x:Null}" CanUserReorderColumns="False" CanUserResizeColumns="False"  CanUserResizeRows="False" Margin="0,30,0,0" VerticalGridLinesBrush="{x:Null}" AutoGenerateColumns="False" GridLinesVisibility="None" CanUserDeleteRows="False" FontFamily="Century Gothic" FontSize="12" FontWeight="Bold" SelectionMode="Single" IsReadOnly="True" Foreground="#DD130303" Background="{x:Null}" BorderBrush="{x:Null}" Grid.RowSpan="2">
+            <DataGrid.Columns>
+                <DataGridTextColumn  Binding="{Binding Placa}" Header="Placa" Width="80" SortDirection="Ascending"/>
+                <DataGridTextColumn  Binding="{Binding Modelo}" Header="Modelo" Width="80" SortDirection="Ascending"/>
+                <DataGridTextColumn  Binding="{Binding Cor}" Header="Cor" Width="80" SortDirection="Ascending"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+
+
     </Grid>
 </Window>
+
